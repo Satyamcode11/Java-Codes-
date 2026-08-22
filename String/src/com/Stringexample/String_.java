@@ -2,8 +2,6 @@ package com.Stringexample;
 
 import java.util.Arrays;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class String_ {
     public static void main(java.lang.String[] args) {
         String string1 = "Hello!"; // Here directly providing the value of the string
@@ -60,9 +58,6 @@ public class String_ {
         System.out.println(str4.hashCode());
         System.out.println(str4.hashCode());
 
-//! Q - What is the difference between String, StringBuffer & StringBuilder....
-
-
         //Reverse the string.........
         //Using for loops
         String string = new String("Satyam");
@@ -78,5 +73,7 @@ public class String_ {
             System.out.print(string.charAt(x)+ ", ");
             x--;
         }
+
+
     }
 }
