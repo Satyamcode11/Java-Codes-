@@ -10,7 +10,7 @@ package com.Stringexample;
 //That's Why it's prefer over string Buffer.*/
 
 public class StringBuilder_ {
-    public static void main(String_[] args) {
+    public static void main(String[] args) {
        StringBuilder sb = new StringBuilder("Satyam");
        sb.append(" Moharana");//append add after the string
         System.out.println(sb);
@@ -33,13 +33,6 @@ public class StringBuilder_ {
         System.out.println(sb.indexOf("m")); //Find the character in which index
 
         System.out.println(sb.toString());// convert to string
-
-
-
-
-
-
-
 
     }
 }

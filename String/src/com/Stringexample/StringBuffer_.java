@@ -25,7 +25,7 @@ public class StringBuffer_ {
         System.out.println(sb);
 
 
-        System.out.println(sb.substring(6,11)); //Start index 6 to go 11 character
+        System.out.println(sb.substring(4,11)); //Start index 6 to go 11 character
         System.out.println(sb.indexOf("m")); //Find the character in which index
 
         System.out.println(sb.toString());// convert to string
