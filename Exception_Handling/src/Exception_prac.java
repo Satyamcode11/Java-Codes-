@@ -6,14 +6,20 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Exception_prac {
     public static void main(String[] args) {
+        //Example: 1
+        int number = 10/0; //ArithmeticException happen here
+
+        //Example: 2 (Catch Exception using try/catch block)
         try {
-            int var1 = 6 / 0;
+            int num = 6 / 0;
         } catch (ArithmeticException e) {
             System.out.println(e.getMessage());
         }
 
         System.out.println("After exception Handling Message ");
         System.out.println();
+
+        //Example: 3
         String string = null;
 
         try {
@@ -24,6 +30,9 @@ public class Exception_prac {
         }
 
         System.out.println("The program continue running safely: ");
+        System.out.println();
+
+        //Example: 3
 
         try {
             int[] arr = new int[]{10, 20, 30, 40};
@@ -37,17 +46,21 @@ public class Exception_prac {
 
         System.out.println();
 
+        //Example: 4
+
         try {
             String str = "Satyam";
             int parsedNumber = Integer.parseInt(str);
             int[] arr = new int[]{1, 2, 3, 4};
             System.out.println(arr[5]);
             int var5 = 50 / 0;
-        } catch (ArrayIndexOutOfBoundsException | ArithmeticException | NumberFormatException e) {
-            System.out.println(((RuntimeException) e).getMessage());
+        } catch ( NumberFormatException | ArrayIndexOutOfBoundsException | ArithmeticException e) {
+            System.out.println(e.getMessage());
         }
 
         System.out.println();
+
+        //Example: 5 (Finally Block)
 
         try {
             int e = 10 / 0;
@@ -58,6 +71,9 @@ public class Exception_prac {
         }
 
         System.out.println();
+
+        //Example: 6
+
         File file = new File("git.txt");
 
         try (Scanner scanner = new Scanner(file)) {
