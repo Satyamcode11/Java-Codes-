@@ -9,6 +9,9 @@ package com.Stringexample;
  there thread safety is unnecessary & it makes operations slower
  */
 public class StringBuffer_ {
+    public StringBuffer_() {
+    }
+
     public static void main(String[] args) {
         StringBuffer sb = new StringBuffer("Satyam Moharana");
         sb.insert(0,"Mr.");// Insert in offset string is Mr.
