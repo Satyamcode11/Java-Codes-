@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Exception_prac {
+public class cwh_01_tryCatch {
     public static void main(String[] args) {
         //Example: 1
         int number = 10/0; //ArithmeticException happen here
@@ -80,7 +80,7 @@ public class Exception_prac {
             while (scanner.hasNextLine()) {
                 System.out.println(scanner.nextLine());
             }
-        } catch (FileNotFoundException var26) {
+        } catch (FileNotFoundException e) {
             System.out.println("Error: Target file could not be found on desk");
         }
 
