@@ -39,7 +39,7 @@ public class cwh_01_OneD_Array {
             x--;
         }
 
-        System.out.println();
+       System.out.println();
 
         //example: 4
         int [] numbers = {10,20,30,47,59,60};
@@ -52,7 +52,7 @@ public class cwh_01_OneD_Array {
             i++;
         }
 
-        System.out.println();
+            System.out.println();
 
         //example: 5 (Array to arraylist)
       ArrayList<Integer> al = new ArrayList<>();
@@ -60,6 +60,22 @@ public class cwh_01_OneD_Array {
           al.add(num);
       }
         System.out.println(al);
+
+         //Reverse an array
+//        for (int x = numbers.length-1; x>0;x--){
+//            System.out.println(numbers[x]);
+//        }
+//        System.out.println();
+
+        // using two pointer swapping.
+        for (int j =0; j<numbers.length/2;j++ ){
+            int temp= numbers[j];
+            numbers[j] = numbers[numbers.length-1-j];
+            numbers[numbers.length-1-j]=temp;
+        }
+        for (int j =0 ; j<numbers.length;j++){
+            System.out.print(numbers[j] + " ");
+        }
 
     }
 }

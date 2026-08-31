@@ -80,6 +80,8 @@ public class cwh_01_List {
 
          System.out.println(st);
 
+
+
          String result= st.pop();
          System.out.println("The remove elements are : " + result); // Kotlin
 

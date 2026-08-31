@@ -66,7 +66,6 @@ public class String_ {
         }
         System.out.println();
 
-
         //using While loop
         int x = string.length()-1;
         while(x>=0){
